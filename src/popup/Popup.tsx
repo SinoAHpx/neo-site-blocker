@@ -120,10 +120,12 @@ export const Popup = () => {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
+    // Load blocked sites from chrome storage on component mount
     chrome.storage.sync.get({ blockedSites: [] }, (data) => {
       setSites(data.blockedSites)
     })
 
+    // Set initial dark mode based on system preference
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setIsDark(true)
       document.documentElement.classList.add('dark')
@@ -131,6 +133,7 @@ export const Popup = () => {
   }, [])
 
   useEffect(() => {
+    // Save blocked sites to chrome storage whenever the sites state changes
     if (sites.length > 0) {
       chrome.storage.sync.set({ blockedSites: sites })
     }
