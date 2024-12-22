@@ -2,8 +2,8 @@
   "name": "neo-site-blocker",
   "displayName": "neo-site-blocker",
   "version": "0.0.0",
-  "author": "**",
-  "description": "",
+  "author": "AHpx",
+  "description": "A website blocker, help you to focus on more important things, preventing your day to be ruined.",
   "type": "module",
   "license": "MIT",
   "keywords": [
