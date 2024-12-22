@@ -1,7 +1,7 @@
 {
   "name": "neo-site-blocker",
-  "displayName": "neo-site-blocker",
-  "version": "0.0.0",
+  "displayName": "Neo Site Blocker",
+  "version": "1.0.0",
   "author": "AHpx",
   "description": "A website blocker, help you to focus on more important things, preventing your day to be ruined.",
   "type": "module",
